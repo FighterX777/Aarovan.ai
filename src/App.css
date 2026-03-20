@@ -1,0 +1,559 @@
+@import './styles/colors.css';
+@import './styles/gradients.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================
+   MATERIAL SYMBOLS
+   ============================================ */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* ============================================
+   GLASS MORPHISM EFFECTS
+   ============================================ */
+.glass-card {
+  background: rgba(227, 226, 226, 0.6);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+.glass-panel {
+  background: rgba(227, 226, 226, 0.6);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+/* ============================================
+   GRADIENT UTILITIES
+   ============================================ */
+.gradient-primary {
+  background: linear-gradient(135deg, #01283c 0%, #1d3e53 100%);
+}
+
+.primary-gradient {
+  background: linear-gradient(135deg, #01283c 0%, #1d3e53 100%);
+}
+
+.gradient-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(1, 40, 60, 0.05) 0%,
+    rgba(29, 62, 83, 0.1) 50%,
+    rgba(1, 40, 60, 0.05) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+/* ============================================
+   BORDER & SHADOW UTILITIES
+   ============================================ */
+.ghost-border {
+  outline: 1px solid rgba(194, 199, 205, 0.15);
+}
+
+.editorial-shadow {
+  box-shadow: 0px 20px 40px rgba(26, 28, 28, 0.06);
+}
+
+.glow-shadow {
+  box-shadow: 0 0 20px rgba(1, 40, 60, 0.1);
+}
+
+.glow-shadow-hover {
+  transition: box-shadow 0.3s ease;
+}
+
+.glow-shadow-hover:hover {
+  box-shadow: 0 0 30px rgba(1, 40, 60, 0.2);
+}
+
+/* ============================================
+   SCROLL ANIMATIONS
+   ============================================ */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(1, 40, 60, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(1, 40, 60, 0.4);
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================================
+   ANIMATION CLASSES
+   ============================================ */
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-fade-in-down {
+  animation: fadeInDown 0.6s ease-out forwards;
+}
+
+.animate-fade-in-left {
+  animation: fadeInLeft 0.6s ease-out forwards;
+}
+
+.animate-fade-in-right {
+  animation: fadeInRight 0.6s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.5s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-slide-in-bottom {
+  animation: slideInFromBottom 0.8s ease-out forwards;
+}
+
+/* Staggered animation delays */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+.delay-600 { animation-delay: 0.6s; }
+.delay-700 { animation-delay: 0.7s; }
+.delay-800 { animation-delay: 0.8s; }
+
+/* ============================================
+   HOVER EFFECTS
+   ============================================ */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(26, 28, 28, 0.12);
+}
+
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.hover-glow {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 30px rgba(1, 40, 60, 0.3);
+  transform: translateY(-2px);
+}
+
+/* ============================================
+   GRADIENT TEXT
+   ============================================ */
+.gradient-text {
+  background: linear-gradient(135deg, #01283c 0%, #446275 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ============================================
+   SMOOTH SCROLLING
+   ============================================ */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ============================================
+   CUSTOM SCROLLBAR
+   ============================================ */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f4f3f3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #01283c;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1d3e53;
+}
+
+/* ============================================
+   LOADING STATES
+   ============================================ */
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    #f4f3f3 0%,
+    #e9e8e8 50%,
+    #f4f3f3 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+}
+
+/* ============================================
+   FOCUS STATES
+   ============================================ */
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #01283c;
+  outline-offset: 2px;
+}
+
+/* ============================================
+   BLUR & BACKDROP EFFECTS
+   ============================================ */
+.blur-sm {
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.blur-md {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.blur-lg {
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+/* ============================================
+   ELEVATED SHADOW SYSTEM
+   ============================================ */
+.shadow-elevation-0 {
+  box-shadow: none;
+}
+
+.shadow-elevation-1 {
+  box-shadow: 0 1px 3px rgba(26, 28, 28, 0.12);
+}
+
+.shadow-elevation-2 {
+  box-shadow: 0 3px 6px rgba(26, 28, 28, 0.15);
+}
+
+.shadow-elevation-3 {
+  box-shadow: 0 6px 12px rgba(26, 28, 28, 0.18);
+}
+
+.shadow-elevation-4 {
+  box-shadow: 0 8px 16px rgba(26, 28, 28, 0.15);
+}
+
+.shadow-elevation-5 {
+  box-shadow: 0 12px 24px rgba(26, 28, 28, 0.2);
+}
+
+/* ============================================
+   MICRO-INTERACTIONS
+   ============================================ */
+@keyframes buttonRipple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(1, 40, 60, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(1, 40, 60, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(1, 40, 60, 0);
+  }
+}
+
+.button-ripple {
+  animation: buttonRipple 0.6s ease-out;
+}
+
+@keyframes underlineSlide {
+  from {
+    width: 0;
+    left: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.underline-slide {
+  position: relative;
+}
+
+.underline-slide::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 2px;
+  background: #01283c;
+  animation: underlineSlide 0.3s ease-out;
+}
+
+@keyframes morphing {
+  0%, 100% {
+    clip-path: circle(48% at 52% at 52%);
+  }
+  25% {
+    clip-path: circle(48% at 60% at 45%);
+  }
+  50% {
+    clip-path: circle(48% at 45% at 55%);
+  }
+  75% {
+    clip-path: circle(48% at 55% at 65%);
+  }
+}
+
+.morphing {
+  animation: morphing 8s ease-in-out infinite;
+}
+
+/* ============================================
+   PARALLAX EFFECTS
+   ============================================ */
+.parallax-slow {
+  will-change: transform;
+}
+
+/* ============================================
+   REDUCED MOTION
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ============================================
+   CARD ENHANCEMENTS
+   ============================================ */
+.card-interactive {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.card-interactive:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(26, 28, 28, 0.1);
+}
+
+.card-interactive:active {
+  transform: translateY(-2px);
+}
+
+/* ============================================
+   BACKGROUND PATTERNS
+   ============================================ */
+.bg-grid-pattern {
+  background-image: 
+    linear-gradient(rgba(1, 40, 60, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(1, 40, 60, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+.bg-dots-pattern {
+  background-image: radial-gradient(rgba(1, 40, 60, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* ============================================
+   BUTTON ENHANCEMENTS
+   ============================================ */
+.btn-primary {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.btn-primary:hover::before {
+  left: 100%;
+}
+
+/* ============================================
+   NAVIGATION ENHANCEMENTS
+   ============================================ */
+nav {
+  transition: all 0.3s ease;
+}
+
+.nav-scrolled {
+  box-shadow: 0 4px 12px rgba(26, 28, 28, 0.08);
+  backdrop-filter: blur(10px);
+  background: rgba(250, 249, 249, 0.95);
+}
+
+/* ============================================
+   SECTION SPACING
+   ============================================ */
+.section-padding {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+/* ============================================
+   ACCESSIBILITY
+   ============================================ */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* ============================================
+   PERFORMANCE OPTIMIZATIONS
+   ============================================ */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  content-visibility: auto;
+}
+
+/* ============================================
+   RESPONSIVE UTILITIES
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,228 @@
+/* ============================================
+   COLOR PALETTE - DESIGN SYSTEM
+   Based on Material Design 3
+   ============================================ */
+
+:root {
+  /* Primary Colors */
+  --color-primary: #01283c;
+  --color-primary-container: #1d3e53;
+  --color-primary-fixed: #d4e5f7;
+  --color-primary-fixed-dim: #b8d1e6;
+
+  /* Secondary Colors */
+  --color-secondary: #556073;
+  --color-secondary-container: #6d7d99;
+  --color-secondary-fixed: #dce3f2;
+  --color-secondary-fixed-dim: #c0cce1;
+
+  /* Tertiary Colors */
+  --color-tertiary: #5a6670;
+  --color-tertiary-container: #7a8590;
+  --color-tertiary-fixed: #dbe3f2;
+  --color-tertiary-fixed-dim: #c1cae0;
+
+  /* Neutral/Surface Colors */
+  --color-surface: #faf9f9;
+  --color-surface-dim: #ddd9d9;
+  --color-surface-bright: #ffffff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f4f3f3;
+  --color-surface-container: #efeeed;
+  --color-surface-container-high: #e9e8e8;
+  --color-surface-container-highest: #e3e2e2;
+  --color-surface-variant: #e3e2e2;
+  --color-outline: #b2acab;
+  --color-outline-variant: #c2c7cd;
+
+  /* Error/Semantic Colors */
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+  --color-on-error: #ffffff;
+  --color-on-error-container: #410e0b;
+
+  /* Success/Warning Colors */
+  --color-success: #2e7d32;
+  --color-warning: #f57f17;
+  --color-info: #0277bd;
+
+  /* Text/On Colors */
+  --color-on-primary: #ffffff;
+  --color-on-secondary: #ffffff;
+  --color-on-tertiary: #ffffff;
+  --color-on-surface: #1a1c1c;
+  --color-on-surface-variant: #4a4744;
+  --color-on-background: #1a1c1c;
+
+  /* Background */
+  --color-background: #faf9f9;
+  --color-on-background: #1a1c1c;
+
+  /* Gradient Colors */
+  --gradient-primary: linear-gradient(135deg, #01283c 0%, #1d3e53 100%);
+  --gradient-secondary: linear-gradient(135deg, #556073 0%, #6d7d99 100%);
+  --gradient-accent: linear-gradient(135deg, #7c3aed 0%, #ec4899 100%);
+  --gradient-subtle: linear-gradient(135deg, rgba(1, 40, 60, 0.05) 0%, rgba(29, 62, 83, 0.1) 100%);
+}
+
+/* ============================================
+   COLOR UTILITY CLASSES
+   ============================================ */
+
+/* Primary Colors */
+.text-primary {
+  color: var(--color-primary);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.text-primary-container {
+  color: var(--color-primary-container);
+}
+
+.bg-primary-container {
+  background-color: var(--color-primary-container);
+}
+
+.text-on-primary {
+  color: var(--color-on-primary);
+}
+
+.bg-on-primary {
+  background-color: var(--color-on-primary);
+}
+
+/* Secondary Colors */
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.text-secondary-container {
+  color: var(--color-secondary-container);
+}
+
+.bg-secondary-container {
+  background-color: var(--color-secondary-container);
+}
+
+/* Surface Colors */
+.bg-surface {
+  background-color: var(--color-surface);
+}
+
+.bg-surface-dim {
+  background-color: var(--color-surface-dim);
+}
+
+.bg-surface-bright {
+  background-color: var(--color-surface-bright);
+}
+
+.bg-surface-container-lowest {
+  background-color: var(--color-surface-container-lowest);
+}
+
+.bg-surface-container-low {
+  background-color: var(--color-surface-container-low);
+}
+
+.bg-surface-container {
+  background-color: var(--color-surface-container);
+}
+
+.bg-surface-container-high {
+  background-color: var(--color-surface-container-high);
+}
+
+.bg-surface-container-highest {
+  background-color: var(--color-surface-container-highest);
+}
+
+/* Text Colors */
+.text-on-surface {
+  color: var(--color-on-surface);
+}
+
+.text-on-surface-variant {
+  color: var(--color-on-surface-variant);
+}
+
+.text-on-background {
+  color: var(--color-on-background);
+}
+
+/* Error/Semantic Colors */
+.text-error {
+  color: var(--color-error);
+}
+
+.bg-error {
+  background-color: var(--color-error);
+}
+
+.bg-error-container {
+  background-color: var(--color-error-container);
+}
+
+.text-success {
+  color: var(--color-success);
+}
+
+.bg-success {
+  background-color: var(--color-success);
+}
+
+.text-warning {
+  color: var(--color-warning);
+}
+
+.bg-warning {
+  background-color: var(--color-warning);
+}
+
+/* Outline Colors */
+.outline-variant {
+  outline-color: var(--color-outline-variant);
+}
+
+.border-outline-variant {
+  border-color: var(--color-outline-variant);
+}
+
+/* ============================================
+   OPACITY UTILITIES
+   ============================================ */
+
+.opacity-10 {
+  opacity: 0.1;
+}
+
+.opacity-15 {
+  opacity: 0.15;
+}
+
+.opacity-20 {
+  opacity: 0.2;
+}
+
+.opacity-30 {
+  opacity: 0.3;
+}
+
+.opacity-40 {
+  opacity: 0.4;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.opacity-60 {
+  opacity: 0.6;
+}

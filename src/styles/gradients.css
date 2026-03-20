@@ -1,0 +1,158 @@
+/* ============================================
+   GRADIENT SYSTEM
+   ============================================ */
+
+/* Primary Gradients */
+.gradient-primary {
+  background: linear-gradient(135deg, #01283c 0%, #1d3e53 100%);
+}
+
+.gradient-primary-subtle {
+  background: linear-gradient(135deg, rgba(1, 40, 60, 0.05) 0%, rgba(29, 62, 83, 0.1) 100%);
+}
+
+.gradient-primary-strong {
+  background: linear-gradient(135deg, #01283c 0%, #0a1620 100%);
+}
+
+/* Secondary Gradients */
+.gradient-secondary {
+  background: linear-gradient(135deg, #556073 0%, #6d7d99 100%);
+}
+
+/* Accent Gradients */
+.gradient-purple-pink {
+  background: linear-gradient(135deg, #7c3aed 0%, #ec4899 100%);
+}
+
+.gradient-blue-cyan {
+  background: linear-gradient(135deg, #0277bd 0%, #00bcd4 100%);
+}
+
+.gradient-green-emerald {
+  background: linear-gradient(135deg, #2e7d32 0%, #00c853 100%);
+}
+
+/* Directional Gradients */
+.gradient-to-right {
+  background: linear-gradient(to right, var(--color-primary), var(--color-primary-container));
+}
+
+.gradient-to-bottom {
+  background: linear-gradient(to bottom, var(--color-primary), var(--color-primary-container));
+}
+
+.gradient-to-br {
+  background: linear-gradient(to bottom right, var(--color-primary), var(--color-secondary));
+}
+
+/* Shimmer Effect */
+.gradient-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(1, 40, 60, 0.05) 0%,
+    rgba(29, 62, 83, 0.1) 50%,
+    rgba(1, 40, 60, 0.05) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Gradient Text Effect */
+.gradient-text-primary {
+  background: linear-gradient(135deg, #01283c 0%, #1d3e53 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-secondary {
+  background: linear-gradient(135deg, #556073 0%, #6d7d99 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-accent {
+  background: linear-gradient(135deg, #7c3aed 0%, #ec4899 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Animated Gradients */
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-animated {
+  background-size: 400% 400%;
+  animation: gradient-shift 15s ease infinite;
+}
+
+/* Gradient Borders Using Background Clips */
+.gradient-border {
+  position: relative;
+  background: linear-gradient(var(--color-surface), var(--color-surface)) padding-box,
+              linear-gradient(135deg, #01283c, #1d3e53) border-box;
+  border: 2px solid transparent;
+}
+
+/* Gradient Mesh Backgrounds */
+.gradient-mesh-primary {
+  background: 
+    radial-gradient(at 20% 50%, rgba(1, 40, 60, 0.1) 0px, transparent 50%),
+    radial-gradient(at 80% 80%, rgba(29, 62, 83, 0.1) 0px, transparent 50%),
+    linear-gradient(135deg, #faf9f9 0%, #f4f3f3 100%);
+}
+
+.gradient-mesh-secondary {
+  background: 
+    radial-gradient(at 80% 20%, rgba(85, 96, 115, 0.1) 0px, transparent 50%),
+    radial-gradient(at 20% 80%, rgba(109, 125, 153, 0.1) 0px, transparent 50%),
+    linear-gradient(135deg, #faf9f9 0%, #f4f3f3 100%);
+}
+
+/* Blob Gradients */
+.gradient-blob {
+  position: absolute;
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  background: linear-gradient(135deg, rgba(1, 40, 60, 0.15) 0%, rgba(29, 62, 83, 0.1) 100%);
+  animation: blob 8s ease infinite;
+}
+
+@keyframes blob {
+  0%, 100% {
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    border-radius: 70% 30% 66% 33% / 33% 66% 33% 66%;
+    transform: translate(-30px, -50px) scale(1.1);
+  }
+  50% {
+    border-radius: 100% 60% 52% 37% / 72% 88% 12% 43%;
+    transform: translate(30px, 50px) scale(0.9);
+  }
+  75% {
+    border-radius: 74% 26% 46% 54% / 50% 50% 50% 50%;
+    transform: translate(-20px, 20px) scale(1.05);
+  }
+}
