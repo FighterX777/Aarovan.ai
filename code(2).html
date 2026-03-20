@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed": "#001e2f",
+              "surface-dim": "#dbdada",
+              "on-surface-variant": "#42474c",
+              "on-secondary-container": "#48667a",
+              "inverse-on-surface": "#f1f0f0",
+              "on-error": "#ffffff",
+              "on-tertiary-container": "#8fab9d",
+              "surface-container-low": "#f4f3f3",
+              "surface-bright": "#faf9f9",
+              "secondary-fixed": "#c7e7fd",
+              "surface-container-lowest": "#ffffff",
+              "tertiary": "#102a20",
+              "primary": "#01283c",
+              "tertiary-fixed": "#cce9da",
+              "surface-tint": "#426278",
+              "surface": "#faf9f9",
+              "secondary": "#446275",
+              "error-container": "#ffdad6",
+              "on-secondary-fixed": "#001e2d",
+              "outline-variant": "#c2c7cd",
+              "on-secondary-fixed-variant": "#2b4a5c",
+              "on-primary-fixed-variant": "#2a4a60",
+              "secondary-fixed-dim": "#abcbe1",
+              "primary-fixed-dim": "#aacbe4",
+              "primary-container": "#1d3e53",
+              "background": "#faf9f9",
+              "inverse-surface": "#2f3131",
+              "error": "#ba1a1a",
+              "on-error-container": "#93000a",
+              "tertiary-fixed-dim": "#b0cdbe",
+              "secondary-container": "#c4e4fb",
+              "on-secondary": "#ffffff",
+              "inverse-primary": "#aacbe4",
+              "on-surface": "#1a1c1c",
+              "primary-fixed": "#c8e6ff",
+              "surface-container-highest": "#e3e2e2",
+              "on-background": "#1a1c1c",
+              "outline": "#72787d",
+              "surface-container": "#efeeed",
+              "on-primary": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "on-tertiary-fixed-variant": "#324c41",
+              "on-tertiary-fixed": "#052017",
+              "surface-container-high": "#e9e8e8",
+              "tertiary-container": "#264035",
+              "surface-variant": "#e3e2e2",
+              "on-primary-container": "#89a9c2"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .glass-panel {
+            background: rgba(227, 226, 226, 0.6);
+            backdrop-filter: blur(24px);
+        }
+        .primary-gradient {
+            background: linear-gradient(135deg, #01283c 0%, #1d3e53 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body">
+<!-- TopNavBar -->
+<nav class="docked full-width top-0 z-50 bg-[#faf9f9] dark:bg-slate-950 no-border tonal-layering bg-[#efeeed] dark:bg-slate-900 sticky">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-serif font-bold text-[#1D3E53] dark:text-slate-100">Aarovan.ai</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#1D3E53] transition-colors font-body title-lg" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#1D3E53] transition-colors font-body title-lg" href="#">About</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#1D3E53] transition-colors font-body title-lg" href="#">Features</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#1D3E53] transition-colors font-body title-lg" href="#">Team</a>
+<a class="text-[#1D3E53] dark:text-white font-bold border-b-2 border-[#1D3E53] dark:border-slate-200 pb-1 font-body title-lg" href="#">Contact</a>
+</div>
+<div class="flex gap-4">
+<button class="hidden lg:block px-6 py-2 border border-outline-variant/20 text-on-surface hover:bg-slate-100 transition-all font-label text-sm uppercase tracking-widest">Request Demo</button>
+<button class="primary-gradient text-white px-6 py-2 rounded-lg font-label text-sm uppercase tracking-widest active:scale-95 duration-150">Partner with Us</button>
+</div>
+</div>
+</nav>
+<main class="max-w-7xl mx-auto px-8 py-16">
+<!-- Hero Section -->
+<header class="mb-24 flex flex-col items-start gap-4">
+<span class="font-label text-primary-container uppercase tracking-[0.2em] text-sm">Collaboration</span>
+<h1 class="font-headline text-6xl md:text-7xl font-extrabold text-primary leading-tight max-w-3xl">Partner with Us</h1>
+<p class="font-body text-xl text-on-surface-variant max-w-xl leading-relaxed mt-4">
+                Join our mission to democratize elite interview preparation. We collaborate with forward-thinking institutions to bridge the gap between academic learning and career success.
+            </p>
+</header>
+<!-- Main Content Area: Bento-inspired Asymmetric Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+<!-- Contact Form Block (Primary) -->
+<div class="lg:col-span-7 bg-surface-container-low rounded-xl p-10 flex flex-col gap-8">
+<h2 class="font-headline text-3xl font-bold text-primary">Send an Inquiry</h2>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="font-label text-xs uppercase tracking-wider text-on-surface-variant">Full Name</label>
+<input class="bg-surface-container-lowest border-none rounded-lg p-4 focus:ring-1 focus:ring-primary-fixed-dim outline-none font-body" placeholder="John Doe" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label text-xs uppercase tracking-wider text-on-surface-variant">Institution Email</label>
+<input class="bg-surface-container-lowest border-none rounded-lg p-4 focus:ring-1 focus:ring-primary-fixed-dim outline-none font-body" placeholder="john@university.edu" type="email"/>
+</div>
+<div class="flex flex-col gap-2 md:col-span-2">
+<label class="font-label text-xs uppercase tracking-wider text-on-surface-variant">Partnership Type</label>
+<select class="bg-surface-container-lowest border-none rounded-lg p-4 focus:ring-1 focus:ring-primary-fixed-dim outline-none font-body">
+<option>University Placement Cell</option>
+<option>Technical Bootcamp</option>
+<option>Corporate Training</option>
+<option>Other</option>
+</select>
+</div>
+<div class="flex flex-col gap-2 md:col-span-2">
+<label class="font-label text-xs uppercase tracking-wider text-on-surface-variant">Message</label>
+<textarea class="bg-surface-container-lowest border-none rounded-lg p-4 focus:ring-1 focus:ring-primary-fixed-dim outline-none font-body" placeholder="Tell us about your institution..." rows="5"></textarea>
+</div>
+<div class="md:col-span-2">
+<button class="primary-gradient text-white px-10 py-4 rounded-lg font-label text-sm uppercase tracking-widest w-full md:w-auto shadow-xl hover:shadow-2xl transition-all">Submit Inquiry</button>
+</div>
+</form>
+</div>
+<!-- Details & Glass Panel Column -->
+<div class="lg:col-span-5 flex flex-col gap-10">
+<!-- Direct Contact -->
+<div class="bg-surface-container p-8 rounded-xl flex flex-col gap-6">
+<h3 class="font-headline text-2xl font-bold text-primary">Direct Contact</h3>
+<div class="flex flex-col gap-6">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<p class="font-label text-xs uppercase tracking-wider text-on-surface-variant">Email</p>
+<p class="font-body text-lg font-semibold text-primary">aarovan.ai@gmail.com</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<p class="font-label text-xs uppercase tracking-wider text-on-surface-variant">Headquarters</p>
+<p class="font-body text-lg font-semibold text-primary">Innovation Hub, Bengaluru, IN</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Academic Excellence Quote (Asymmetric Styling) -->
+<div class="glass-panel p-10 rounded-xl relative overflow-hidden group">
+<span class="material-symbols-outlined text-8xl absolute -right-4 -bottom-4 text-primary/5 group-hover:scale-110 transition-transform duration-700">school</span>
+<p class="font-headline text-2xl italic text-primary leading-relaxed relative z-10">
+                        "The Digital Scholar represents the union of AI precision and pedagogical excellence."
+                    </p>
+<p class="font-body text-sm mt-6 text-on-surface-variant uppercase tracking-widest font-semibold">— Engineering Excellence Division</p>
+</div>
+</div>
+</div>
+<!-- Progress Thread Representation -->
+<div class="mt-32 w-full flex flex-col items-center gap-6">
+<div class="w-full h-[2px] bg-secondary-fixed-dim relative">
+<div class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-4 h-4 bg-primary rounded-full shadow-[0_0_15px_rgba(1,40,60,0.5)]"></div>
+</div>
+<p class="font-label text-[10px] uppercase tracking-[0.4em] text-on-surface-variant">AI-Driven Professional Growth</p>
+</div>
+<!-- CTA Section -->
+<section class="mt-32 mb-16 bg-primary-container rounded-xl overflow-hidden relative">
+<div class="absolute inset-0 opacity-10" data-alt="Subtle carbon fiber texture pattern" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAWuvgpgkSazT2Hdw34Wo0S_TPlSq4qcKEcT9Z4IaaAdSVpGsrIel-pGMKP7S1ULPXsAdwzqn-5JJTcEP2bBJ3ICJo1b2zSTUIC60DUQSoMiI_ONQjexNq5vmjNWkj5B0gkNe5nrSoFSgs1vwd8mWVU-Um3X_juutBoAAIIIuRAdKwUPvy0FebPuLUOupgctZrzgpSDS8FDXUbASEduWaW3htZnhoYuRgRKUsh9bN4IpQzPYj-eE6TnZam3S2logw4bnFfYOUTUWcQ');"></div>
+<div class="p-12 md:p-20 flex flex-col md:flex-row items-center justify-between gap-12 relative z-10">
+<div class="max-w-2xl text-center md:text-left">
+<h2 class="font-headline text-4xl md:text-5xl font-bold text-white leading-tight">Transform Placement Preparation at Your Institution</h2>
+<p class="text-on-primary-container mt-6 text-lg font-body">Equip your students with the elite tools they need to succeed in top-tier technical interviews.</p>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+<button class="bg-white text-primary px-10 py-4 rounded-lg font-label text-sm uppercase tracking-widest hover:bg-surface-bright transition-colors">Request Demo</button>
+<button class="border border-white/20 text-white px-10 py-4 rounded-lg font-label text-sm uppercase tracking-widest hover:bg-white/10 transition-colors">Partner with Us</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#efeeed] dark:bg-slate-900 full-width py-12 px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-10 max-w-7xl mx-auto">
+<div class="md:col-span-1">
+<div class="text-xl font-serif font-bold text-[#1D3E53] dark:text-slate-100 mb-4">Aarovan.ai</div>
+<p class="text-slate-500 dark:text-slate-400 font-body text-sm leading-relaxed">Defining the next generation of academic and career preparation through advanced AI logic.</p>
+</div>
+<div>
+<h4 class="font-headline font-bold text-primary mb-6">Explore</h4>
+<ul class="flex flex-col gap-4 text-slate-500 dark:text-slate-400 font-body text-sm">
+<li><a class="hover:text-[#1D3E53] transition-opacity" href="#">Features</a></li>
+<li><a class="hover:text-[#1D3E53] transition-opacity" href="#">Curriculum</a></li>
+<li><a class="hover:text-[#1D3E53] transition-opacity" href="#">Case Studies</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline font-bold text-primary mb-6">Legal &amp; Connect</h4>
+<ul class="flex flex-col gap-4 text-slate-500 dark:text-slate-400 font-body text-sm">
+<li><a class="hover:text-[#1D3E53] transition-opacity" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-[#1D3E53] transition-opacity" href="#">Terms of Service</a></li>
+<li><a class="hover:text-[#1D3E53] transition-opacity" href="#">LinkedIn</a></li>
+<li><a class="hover:text-[#1D3E53] transition-opacity" href="#">GitHub</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline font-bold text-primary mb-6">Inquiries</h4>
+<p class="text-slate-500 dark:text-slate-400 font-body text-sm mb-4 underline">aarovan.ai@gmail.com</p>
+<p class="text-slate-500 dark:text-slate-400 font-body text-xs">© 2024 Aarovan.ai. Engineering Excellence.</p>
+</div>
+</div>
+</footer>
+</body></html>

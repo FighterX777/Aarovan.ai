@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Aarovan.ai | Bridging the Engineering Gap</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700;800&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed": "#001e2f",
+              "surface-dim": "#dbdada",
+              "on-surface-variant": "#42474c",
+              "on-secondary-container": "#48667a",
+              "inverse-on-surface": "#f1f0f0",
+              "on-error": "#ffffff",
+              "on-tertiary-container": "#8fab9d",
+              "surface-container-low": "#f4f3f3",
+              "surface-bright": "#faf9f9",
+              "secondary-fixed": "#c7e7fd",
+              "surface-container-lowest": "#ffffff",
+              "tertiary": "#102a20",
+              "primary": "#01283c",
+              "tertiary-fixed": "#cce9da",
+              "surface-tint": "#426278",
+              "surface": "#faf9f9",
+              "secondary": "#446275",
+              "error-container": "#ffdad6",
+              "on-secondary-fixed": "#001e2d",
+              "outline-variant": "#c2c7cd",
+              "on-secondary-fixed-variant": "#2b4a5c",
+              "on-primary-fixed-variant": "#2a4a60",
+              "secondary-fixed-dim": "#abcbe1",
+              "primary-fixed-dim": "#aacbe4",
+              "primary-container": "#1d3e53",
+              "background": "#faf9f9",
+              "inverse-surface": "#2f3131",
+              "error": "#ba1a1a",
+              "on-error-container": "#93000a",
+              "tertiary-fixed-dim": "#b0cdbe",
+              "secondary-container": "#c4e4fb",
+              "on-secondary": "#ffffff",
+              "inverse-primary": "#aacbe4",
+              "on-surface": "#1a1c1c",
+              "primary-fixed": "#c8e6ff",
+              "surface-container-highest": "#e3e2e2",
+              "on-background": "#1a1c1c",
+              "outline": "#72787d",
+              "surface-container": "#efeeed",
+              "on-primary": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "on-tertiary-fixed-variant": "#324c41",
+              "on-tertiary-fixed": "#052017",
+              "surface-container-high": "#e9e8e8",
+              "tertiary-container": "#264035",
+              "surface-variant": "#e3e2e2",
+              "on-primary-container": "#89a9c2"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0px 20px 40px rgba(26, 28, 28, 0.06);
+        }
+        .glass-panel {
+            background-color: rgba(227, 226, 226, 0.6);
+            backdrop-filter: blur(24px);
+        }
+        .primary-gradient {
+            background: linear-gradient(135deg, #01283c 0%, #1d3e53 100%);
+        }
+        .ghost-border {
+            outline: 1px solid rgba(194, 199, 205, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="bg-[#faf9f9] dark:bg-slate-950 docked full-width top-0 z-50 no-border tonal-layering bg-[#efeeed] dark:bg-slate-900 sticky">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-serif font-bold text-[#1D3E53] dark:text-slate-100">Aarovan.ai</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#1D3E53] transition-colors font-label label-md uppercase tracking-widest" href="#">Home</a>
+<a class="text-[#1D3E53] dark:text-white font-bold border-b-2 border-[#1D3E53] dark:border-slate-200 pb-1 font-label label-md uppercase tracking-widest" href="#">About</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#1D3E53] transition-colors font-label label-md uppercase tracking-widest" href="#">Features</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#1D3E53] transition-colors font-label label-md uppercase tracking-widest" href="#">Team</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#1D3E53] transition-colors font-label label-md uppercase tracking-widest" href="#">Contact</a>
+</div>
+<div class="flex items-center space-x-4">
+<button class="hidden lg:block text-slate-600 dark:text-slate-400 font-label label-md uppercase tracking-widest hover:text-[#1D3E53]">Request Demo</button>
+<button class="primary-gradient text-white px-6 py-2 rounded-lg font-label label-md uppercase tracking-widest active:scale-95 duration-150">Partner with Us</button>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative py-24 md:py-32 px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto flex flex-col items-start gap-8 relative z-10">
+<span class="font-label uppercase tracking-[0.2em] text-secondary font-semibold text-xs mb-[-1.5rem]">The Engineering Vanguard</span>
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold text-primary max-w-4xl leading-tight">
+                    About Aarovan.ai
+                </h1>
+<p class="font-body text-xl text-on-surface-variant max-w-2xl leading-relaxed">
+                    Elevating the trajectory of engineering talent through AI-driven pedagogical precision and real-world simulation.
+                </p>
+</div>
+<!-- Decorative Background Element -->
+<div class="absolute top-0 right-0 w-1/2 h-full bg-surface-container-low -z-0 translate-x-1/4 rounded-bl-[10rem]"></div>
+</section>
+<!-- Mission Statement Section -->
+<section class="bg-surface-container py-24 px-8">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7">
+<div class="bg-surface-container-lowest editorial-shadow p-12 rounded-xl relative overflow-hidden ghost-border">
+<span class="material-symbols-outlined text-primary text-5xl mb-6" data-icon="school">school</span>
+<h2 class="font-headline text-3xl font-bold text-primary mb-6">Bridging the Capability Gap</h2>
+<div class="space-y-6 text-on-surface-variant leading-relaxed text-lg">
+<p>
+                                Engineering education often ends where the professional world begins. At Aarovan.ai, we identify the specific friction points between academic learning and real-world employability.
+                            </p>
+<p>
+                                Our platform isn't just a tool; it's a digital mentor. By leveraging sophisticated LLMs and proprietary interview data, we create an environment where students can fail safely, learn rapidly, and excel confidently.
+                            </p>
+<p class="font-headline italic text-primary-container text-2xl border-l-4 border-primary pl-6 py-2">
+                                "Our mission is to ensure no brilliant mind is held back by a lack of access to elite interview coaching."
+                            </p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 flex flex-col gap-8">
+<div class="bg-surface-container-high p-8 rounded-lg ghost-border">
+<h3 class="font-label uppercase tracking-widest text-primary font-bold text-sm mb-4">Core Philosophy</h3>
+<p class="text-on-surface-variant leading-relaxed">We believe technical brilliance deserves a professional stage. Our platform focuses on behavioral nuances, structural communication, and deep technical articulation.</p>
+</div>
+<div class="bg-surface-container-high p-8 rounded-lg ghost-border">
+<h3 class="font-label uppercase tracking-widest text-primary font-bold text-sm mb-4">Engineering Excellence</h3>
+<p class="text-on-surface-variant leading-relaxed">Built by engineers, for engineers. Every algorithm in our feedback loop is calibrated against the hiring standards of top-tier technology firms.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- The "Progress Thread" Visual Section -->
+<section class="py-24 px-8 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16">
+<h2 class="font-headline text-4xl font-bold text-primary mb-4">The Career Journey</h2>
+<p class="text-on-surface-variant max-w-xl">How we transform academic foundations into career-ready expertise.</p>
+</div>
+<!-- Progress Thread UI -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+<!-- The Thread Line -->
+<div class="hidden md:block absolute top-10 left-0 w-full h-[2px] bg-secondary-fixed-dim z-0 opacity-30"></div>
+<!-- Step 1 -->
+<div class="relative z-10 space-y-6">
+<div class="w-20 h-20 rounded-full bg-white flex items-center justify-center editorial-shadow ghost-border group">
+<div class="w-4 h-4 rounded-full bg-primary-container group-hover:scale-150 transition-transform duration-500"></div>
+<!-- Pulse effect -->
+<div class="absolute w-20 h-20 rounded-full border-2 border-primary-fixed-dim opacity-20 animate-ping"></div>
+</div>
+<h3 class="font-headline text-2xl font-bold text-primary">Contextual Diagnosis</h3>
+<p class="text-on-surface-variant">We assess your current standing against industry benchmarks, identifying high-impact areas for immediate growth.</p>
+</div>
+<!-- Step 2 -->
+<div class="relative z-10 space-y-6">
+<div class="w-20 h-20 rounded-full bg-white flex items-center justify-center editorial-shadow ghost-border">
+<div class="w-4 h-4 rounded-full bg-primary-container"></div>
+</div>
+<h3 class="font-headline text-2xl font-bold text-primary">Iterative Simulation</h3>
+<p class="text-on-surface-variant">Engage in high-fidelity mock interviews that adapt to your performance in real-time using our proprietary AI engine.</p>
+</div>
+<!-- Step 3 -->
+<div class="relative z-10 space-y-6">
+<div class="w-20 h-20 rounded-full bg-white flex items-center justify-center editorial-shadow ghost-border">
+<div class="w-4 h-4 rounded-full bg-primary-container"></div>
+</div>
+<h3 class="font-headline text-2xl font-bold text-primary">Expert Articulation</h3>
+<p class="text-on-surface-variant">Master the art of the technical narrative. Go beyond the code to explain the 'why' and 'how' like a seasoned lead engineer.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Asymmetric Team Teaser Section -->
+<section class="bg-surface-container-low py-24 px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="relative">
+<div class="bg-surface-container-highest w-full aspect-square rounded-xl overflow-hidden editorial-shadow -rotate-2 relative">
+<img alt="Team collaborating" class="w-full h-full object-cover mix-blend-multiply opacity-80" data-alt="Engineering team collaborating in a modern studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvneHkPE7r1obGOagco7FxC6e3psBP326S7wiLuJMnen2T42M8VZNFglnP95axSWtrAzs5zwSrMoVib6ffQ4VA0ez0wgoENvnngJmo13YThdaohs2vzbd5yYkOOusi5p0oTNwz85pkUsVck9_HtqPF9ej5OBRAhYgJPqXvzJE6RIunEaQNJ0Q21cvUl0PgGWaC_vCUzgmmi0dRc0QNhTTr1FF8bX7vTAsdWFypeMxlFzBgqT2Ifua72znqH1awrd_u14s8OsUO5V4"/>
+<div class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent"></div>
+</div>
+<!-- Overlapping card -->
+<div class="absolute -bottom-10 -right-10 bg-white p-8 rounded-lg editorial-shadow max-w-xs ghost-border rotate-3 hidden md:block">
+<p class="font-headline italic text-primary font-bold">"Engineering is not just a job; it's the craft of building the future."</p>
+</div>
+</div>
+<div class="space-y-8">
+<h2 class="font-headline text-4xl font-bold text-primary">Our Pedigree</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                        Aarovan.ai was born out of a collective of educators, AI researchers, and former hiring managers from Silicon Valley and Bangalore's top tech hubs. We've seen thousands of candidates fail not for lack of skill, but for lack of preparation.
+                    </p>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                        We are committed to democratizing technical interview coaching, making the secrets of the world's most elite engineering teams accessible to students everywhere.
+                    </p>
+<div class="pt-4">
+<button class="text-primary font-label uppercase tracking-widest font-bold border-b-2 border-primary-fixed-dim hover:border-primary transition-all pb-1">Meet the Minds behind Aarovan</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Glassmorphism CTA Section -->
+<section class="py-24 px-8 relative">
+<div class="max-w-5xl mx-auto glass-panel p-12 md:p-20 rounded-[2rem] editorial-shadow text-center relative z-10 ghost-border">
+<h2 class="font-headline text-4xl md:text-5xl font-bold text-primary mb-8">Ready to transition from student to scholar?</h2>
+<div class="flex flex-col md:flex-row justify-center gap-6">
+<button class="primary-gradient text-white px-10 py-4 rounded-lg font-label label-md uppercase tracking-[0.1em] font-bold editorial-shadow active:scale-95 transition-transform">Get Started Today</button>
+<button class="bg-transparent border border-outline/20 text-on-surface px-10 py-4 rounded-lg font-label label-md uppercase tracking-[0.1em] font-bold hover:bg-surface-container transition-colors">Contact Our Team</button>
+</div>
+</div>
+<!-- Background Decoration -->
+<div class="absolute inset-0 flex items-center justify-center -z-0">
+<div class="w-96 h-96 bg-primary-fixed-dim/10 rounded-full blur-3xl"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#efeeed] dark:bg-slate-900 full-width py-12 px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-10 max-w-7xl mx-auto">
+<div class="md:col-span-1">
+<div class="text-xl font-serif font-bold text-[#1D3E53] dark:text-slate-100 mb-6">Aarovan.ai</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-body leading-relaxed">
+                    Engineering Excellence. Shaping the future of technical interview readiness through intelligent simulation.
+                </p>
+</div>
+<div>
+<h4 class="font-headline text-primary dark:text-slate-200 font-bold mb-6">Explore</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-[#1D3E53] dark:hover:text-white transition-opacity font-body text-md" href="#">Platform Overview</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-[#1D3E53] dark:hover:text-white transition-opacity font-body text-md" href="#">For Universities</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-[#1D3E53] dark:hover:text-white transition-opacity font-body text-md" href="#">Case Studies</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline text-primary dark:text-slate-200 font-bold mb-6">Legal</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-[#1D3E53] dark:hover:text-white transition-opacity font-body text-md" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-[#1D3E53] dark:hover:text-white transition-opacity font-body text-md" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline text-primary dark:text-slate-200 font-bold mb-6">Connect</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-[#1D3E53] dark:hover:text-white transition-opacity font-body text-md" href="#">LinkedIn</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-[#1D3E53] dark:hover:text-white transition-opacity font-body text-md" href="#">GitHub</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-[#1D3E53] dark:hover:text-white transition-opacity font-body text-md" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-outline/10">
+<p class="text-slate-500 dark:text-slate-400 text-sm font-body">© 2024 Aarovan.ai. Engineering Excellence.</p>
+</div>
+</footer>
+</body></html>
