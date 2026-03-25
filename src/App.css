@@ -148,6 +148,27 @@
   }
 }
 
+@keyframes subtleGlow {
+  0%, 100% {
+    text-shadow: 0 0 10px rgba(1, 40, 60, 0.1),
+                 0 0 20px rgba(1, 40, 60, 0.05);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(1, 40, 60, 0.2),
+                 0 0 30px rgba(1, 40, 60, 0.1),
+                 0 0 40px rgba(1, 40, 60, 0.05);
+  }
+}
+
+@keyframes gentleScale {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+
 @keyframes pulse-glow {
   0%, 100% {
     box-shadow: 0 0 20px rgba(1, 40, 60, 0.2);
@@ -193,6 +214,14 @@
 
 .animate-float {
   animation: float 6s ease-in-out infinite;
+}
+
+.animate-subtle-glow {
+  animation: subtleGlow 3s ease-in-out infinite;
+}
+
+.animate-gentle-scale {
+  animation: gentleScale 4s ease-in-out infinite;
 }
 
 .animate-pulse-glow {

@@ -45,7 +45,7 @@ const Home = () => {
           <div className="lg:col-span-7">
             <h1 
               ref={titleRef}
-              className="font-headline text-5xl md:text-7xl font-bold text-primary leading-tight mb-6 opacity-0"
+              className="font-headline text-5xl md:text-7xl font-bold text-primary leading-tight mb-6 opacity-0 animate-subtle-glow"
             >
               Improve Student Placement Outcomes with AI
             </h1>
