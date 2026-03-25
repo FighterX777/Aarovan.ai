@@ -25,7 +25,7 @@ const Navigation = () => {
         : 'bg-[#faf9f9] dark:bg-slate-950'
     }`}>
       <div className="max-w-7xl mx-auto flex justify-between items-center w-full px-4 md:px-8 py-4">
-        <div className="flex items-center gap-2 md:gap-3 min-w-0">
+        <Link to="/" className="flex items-center gap-2 md:gap-3 min-w-0">
           <img 
             alt="Aarovan.ai Logo" 
             className="h-8 w-auto flex-shrink-0" 
@@ -33,7 +33,7 @@ const Navigation = () => {
             src={logo}
           />
           <span className="text-lg md:text-2xl font-serif font-bold text-[#1D3E53] dark:text-slate-100 truncate">Aarovan.ai</span>
-        </div>
+        </Link>
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">

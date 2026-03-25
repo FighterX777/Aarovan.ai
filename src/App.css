@@ -91,19 +91,18 @@
     opacity: 0;
     transform: translateY(30px);
   }
-  20% {
+  10% {
     opacity: 1;
     transform: translateY(0);
   }
-  60%, 100% {
+  10%, 100% {
     opacity: 1;
-    transform: translateY(0) scale(1.01);
-    filter: brightness(1.05);
   }
-  80% {
-    opacity: 1;
+  55% {
+    transform: translateY(0) scale(1.008);
+  }
+  100% {
     transform: translateY(0) scale(1);
-    filter: brightness(1);
   }
 }
 
@@ -230,7 +229,7 @@
 }
 
 .animate-fade-in-up-breathe {
-  animation: fadeInUpBreathe 4s ease-in-out infinite;
+  animation: fadeInUpBreathe 6s ease-in-out infinite;
 }
 
 .animate-fade-in-down {

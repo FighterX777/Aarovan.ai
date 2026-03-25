@@ -14,7 +14,7 @@ const Contact = () => {
     <div className="bg-background text-on-background font-body">
       <Navigation />
       
-      <main className="max-w-7xl mx-auto px-8 py-16">
+      <main className="max-w-7xl mx-auto px-8 py-20">
         {/* Hero Section */}
         <header className="mb-24 flex flex-col items-start gap-4">
           <span className="font-label text-primary-container uppercase tracking-[0.2em] text-sm">Collaboration</span>
