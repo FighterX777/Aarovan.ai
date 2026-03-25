@@ -7,10 +7,17 @@ import { INTERSECTION_OPTIONS } from '../utils/animationConfig';
 
 const Home = () => {
   // Hero section animations
-  const { ref: titleRef } = useScrollAnimation('animate-fade-in-up');
+  const titleRef = useRef(null);
   const { ref: descriptionRef } = useScrollAnimation('animate-fade-in-up', { threshold: 0.2 });
   const { ref: buttonsRef } = useScrollAnimation('animate-fade-in-up', { threshold: 0.3 });
   const { ref: heroImageRef } = useScrollAnimation('animate-scale-in', { threshold: 0.2 });
+
+  // Add breathe animation to title on mount
+  useEffect(() => {
+    if (titleRef.current) {
+      titleRef.current.classList.add('animate-fade-in-up-breathe');
+    }
+  }, []);
 
   // Stats section animations
   const { ref: stat1Ref, displayValue: stat1 } = useCountUp(98, 2000, INTERSECTION_OPTIONS);
@@ -40,12 +47,12 @@ const Home = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <header className="relative pt-32 md:pt-40 pb-20 overflow-hidden mt-16">
+      <header className="relative pt-20 md:pt-28 pb-14 overflow-hidden mt-16">
         <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-7">
             <h1 
               ref={titleRef}
-              className="font-headline text-5xl md:text-7xl font-bold text-primary leading-tight mb-6 opacity-0 animate-subtle-glow"
+              className="font-headline text-5xl md:text-7xl font-bold text-primary leading-tight mb-6"
             >
               Improve Student Placement Outcomes with AI
             </h1>
