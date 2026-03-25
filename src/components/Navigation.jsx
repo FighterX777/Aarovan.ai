@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import logo from '../assets/logo.png';
 
 const Navigation = () => {
   const location = useLocation();
@@ -29,7 +30,7 @@ const Navigation = () => {
             alt="Aarovan.ai Logo" 
             className="h-8 w-auto flex-shrink-0" 
             data-alt="Official blue logo of Aarovan.ai" 
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDhuwGXvu0XmlEKpdQQs7DhXiE_Fz-QeJlI4d4_sRpPMQkPuz8fht0sf2awcTg6ESuBmeFoPD8qSZOFlKelZpPvs5lHz8k3jpVOngI8tlDmknoKSXXCKEReCiZDrg9GWg9IvZOWFsosy-fqbkHk-pP732mdfeHk3cujzfSIibtkGfiUMBHf3XInjpLAGdJ5GgInv5CojpX9udQBM3j_T9Cmcvm353Ny7GZfoy-Yv9DVjyVDahshC_LUvGf9gditP30gWPTFbmrvlA"
+            src={logo}
           />
           <span className="text-lg md:text-2xl font-serif font-bold text-[#1D3E53] dark:text-slate-100 truncate">Aarovan.ai</span>
         </div>

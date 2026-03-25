@@ -1,7 +1,16 @@
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const Team = () => {
+  const { ref: heroTitleRef } = useScrollAnimation('animate-fade-in-up');
+  const { ref: heroDescRef } = useScrollAnimation('animate-fade-in-up', { threshold: 0.2 });
+  const { ref: member1Ref } = useScrollAnimation('animate-fade-in-left');
+  const { ref: highlightRef } = useScrollAnimation('animate-scale-in');
+  const { ref: member2Ref } = useScrollAnimation('animate-slide-in-bottom');
+  const { ref: member3Ref } = useScrollAnimation('animate-slide-in-bottom');
+  const { ref: progressRef } = useScrollAnimation('animate-fade-in-up');
+
   return (
     <div className="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
       <Navigation />
@@ -11,8 +20,8 @@ const Team = () => {
         <section className="bg-surface py-24 px-8">
           <div className="max-w-7xl mx-auto">
             <div className="max-w-3xl">
-              <h1 className="font-headline text-[3.5rem] leading-[1.1] text-primary mb-8 font-extrabold tracking-tight">Meet the Team</h1>
-              <p className="font-body text-xl text-on-surface-variant leading-relaxed">Built by a team combining expertise in AI, product, and education. We are dedicated to redefining how engineering excellence is nurtured and measured.</p>
+              <h1 ref={heroTitleRef} className="font-headline text-[3.5rem] leading-[1.1] text-primary mb-8 font-extrabold tracking-tight opacity-0">Meet the Team</h1>
+              <p ref={heroDescRef} className="font-body text-xl text-on-surface-variant leading-relaxed opacity-0" style={{ animationDelay: '0.2s' }}>Built by a team combining expertise in AI, product, and education. We are dedicated to redefining how engineering excellence is nurtured and measured.</p>
             </div>
           </div>
         </section>
@@ -22,7 +31,7 @@ const Team = () => {
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
               {/* Team Member 1: Siddharth Garg */}
-              <div className="md:col-span-12 lg:col-span-8 bg-surface-container-lowest rounded-xl overflow-hidden editorial-shadow flex flex-col md:flex-row">
+              <div ref={member1Ref} className="md:col-span-12 lg:col-span-8 bg-surface-container-lowest rounded-xl overflow-hidden editorial-shadow flex flex-col md:flex-row opacity-0">
                 <div className="md:w-1/2 relative min-h-[400px]">
                   <img 
                     alt="Portrait of Siddharth Garg" 
@@ -48,7 +57,7 @@ const Team = () => {
               </div>
 
               {/* Asymmetric Highlight Box */}
-              <div className="md:col-span-12 lg:col-span-4 bg-primary-container rounded-xl p-10 flex flex-col justify-end relative overflow-hidden">
+              <div ref={highlightRef} className="md:col-span-12 lg:col-span-4 bg-primary-container rounded-xl p-10 flex flex-col justify-end relative overflow-hidden opacity-0" style={{ animationDelay: '0.2s' }}>
                 <div className="absolute -top-10 -right-10 w-40 h-40 bg-primary opacity-20 rounded-full blur-3xl"></div>
                 <span className="material-symbols-outlined text-secondary-fixed-dim text-5xl mb-6" data-icon="school">school</span>
                 <h3 className="font-headline text-2xl text-white mb-4">The Digital Scholar Philosophy</h3>
@@ -58,7 +67,7 @@ const Team = () => {
               </div>
 
               {/* Team Member 2: Rohan Garg */}
-              <div className="md:col-span-6 lg:col-span-6 bg-surface-container-lowest rounded-xl overflow-hidden editorial-shadow flex flex-col">
+              <div ref={member2Ref} className="md:col-span-6 lg:col-span-6 bg-surface-container-lowest rounded-xl overflow-hidden editorial-shadow flex flex-col opacity-0" style={{ animationDelay: '0.1s' }}>
                 <div className="h-80 relative">
                   <img 
                     alt="Portrait of Rohan Garg" 
@@ -81,7 +90,7 @@ const Team = () => {
               </div>
 
               {/* Team Member 3: Avennya Goel */}
-              <div className="md:col-span-6 lg:col-span-6 bg-surface-container-lowest rounded-xl overflow-hidden editorial-shadow flex flex-col">
+              <div ref={member3Ref} className="md:col-span-6 lg:col-span-6 bg-surface-container-lowest rounded-xl overflow-hidden editorial-shadow flex flex-col opacity-0" style={{ animationDelay: '0.2s' }}>
                 <div className="h-80 relative">
                   <img 
                     alt="Portrait of Avennya Goel" 
@@ -107,7 +116,7 @@ const Team = () => {
         </section>
 
         {/* Progress Thread */}
-        <section className="bg-surface py-20 px-8 border-t border-outline-variant/10">
+        <section ref={progressRef} className="bg-surface py-20 px-8 border-t border-outline-variant/10 opacity-0">
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="max-w-md">
               <h3 className="font-headline text-2xl text-primary mb-4">The Aarovan Standard</h3>

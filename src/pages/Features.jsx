@@ -1,7 +1,18 @@
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const Features = () => {
+  const { ref: heroTitleRef } = useScrollAnimation('animate-fade-in-up');
+  const { ref: heroDescRef } = useScrollAnimation('animate-fade-in-up', { threshold: 0.2 });
+  const { ref: feature1Ref } = useScrollAnimation('animate-fade-in-left');
+  const { ref: feature2Ref } = useScrollAnimation('animate-scale-in');
+  const { ref: feature3Ref } = useScrollAnimation('animate-slide-in-bottom');
+  const { ref: feature4Ref } = useScrollAnimation('animate-slide-in-bottom');
+  const { ref: feature5Ref } = useScrollAnimation('animate-slide-in-bottom');
+  const { ref: edgeTextRef } = useScrollAnimation('animate-fade-in-left');
+  const { ref: edgeVisualRef } = useScrollAnimation('animate-fade-in-right');
+
   return (
     <div className="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
       <Navigation />
@@ -10,10 +21,10 @@ const Features = () => {
         {/* Hero Section */}
         <section className="pt-24 pb-16 px-8 max-w-7xl mx-auto">
           <div className="max-w-3xl">
-            <h1 className="font-headline text-6xl md:text-7xl text-primary font-bold leading-tight mb-6">
+            <h1 ref={heroTitleRef} className="font-headline text-6xl md:text-7xl text-primary font-bold leading-tight mb-6 opacity-0">
               Platform Features
             </h1>
-            <p className="font-body text-xl text-on-surface-variant leading-relaxed mb-12">
+            <p ref={heroDescRef} className="font-body text-xl text-on-surface-variant leading-relaxed mb-12 opacity-0" style={{ animationDelay: '0.2s' }}>
               Bridging the gap between academic theory and industrial excellence through advanced AI-driven interview simulations and workforce preparation tools.
             </p>
           </div>
@@ -23,7 +34,7 @@ const Features = () => {
         <section className="px-8 pb-32 max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
             {/* Main Feature: AI Simulations */}
-            <div className="md:col-span-8 bg-surface-container-low rounded-xl p-10 flex flex-col justify-between min-h-[400px]">
+            <div ref={feature1Ref} className="md:col-span-8 bg-surface-container-low rounded-xl p-10 flex flex-col justify-between min-h-[400px] opacity-0">
               <div>
                 <div className="mb-6 inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary-fixed">
                   <span className="material-symbols-outlined text-on-primary-fixed" data-icon="psychology">psychology</span>
@@ -49,7 +60,7 @@ const Features = () => {
             </div>
 
             {/* Feature: Instant Feedback */}
-            <div className="md:col-span-4 bg-primary-container text-on-primary-container rounded-xl p-10 flex flex-col justify-between">
+            <div ref={feature2Ref} className="md:col-span-4 bg-primary-container text-on-primary-container rounded-xl p-10 flex flex-col justify-between opacity-0" style={{ animationDelay: '0.2s' }}>
               <div>
                 <div className="mb-6 inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary-fixed-dim">
                   <span className="material-symbols-outlined text-primary" data-icon="bolt">bolt</span>
@@ -71,7 +82,7 @@ const Features = () => {
             </div>
 
             {/* Feature: Student Tracking */}
-            <div className="md:col-span-4 bg-surface-container-high rounded-xl p-10 flex flex-col">
+            <div ref={feature3Ref} className="md:col-span-4 bg-surface-container-high rounded-xl p-10 flex flex-col opacity-0" style={{ animationDelay: '0.1s' }}>
               <div className="mb-6 inline-flex items-center justify-center w-12 h-12 rounded-full bg-tertiary-fixed">
                 <span className="material-symbols-outlined text-on-tertiary-fixed" data-icon="monitoring">monitoring</span>
               </div>
@@ -87,7 +98,7 @@ const Features = () => {
             </div>
 
             {/* Feature: Placement Preparation */}
-            <div className="md:col-span-4 bg-white rounded-xl p-10 flex flex-col shadow-sm border border-outline-variant/10">
+            <div ref={feature4Ref} className="md:col-span-4 bg-white rounded-xl p-10 flex flex-col shadow-sm border border-outline-variant/10 opacity-0" style={{ animationDelay: '0.2s' }}>
               <div className="mb-6 inline-flex items-center justify-center w-12 h-12 rounded-full bg-secondary-fixed">
                 <span className="material-symbols-outlined text-on-secondary-fixed" data-icon="work_history">work_history</span>
               </div>
@@ -98,7 +109,7 @@ const Features = () => {
             </div>
 
             {/* Feature: Scalable Deployment */}
-            <div className="md:col-span-4 bg-surface-container-low rounded-xl p-10 flex flex-col">
+            <div ref={feature5Ref} className="md:col-span-4 bg-surface-container-low rounded-xl p-10 flex flex-col opacity-0" style={{ animationDelay: '0.3s' }}>
               <div className="mb-6 inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary-fixed">
                 <span className="material-symbols-outlined text-on-primary-fixed" data-icon="cloud_done">cloud_done</span>
               </div>
@@ -113,7 +124,7 @@ const Features = () => {
         {/* Engineering Edge Section */}
         <section className="py-24 bg-surface-container relative overflow-hidden">
           <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <div>
+            <div ref={edgeTextRef} className="opacity-0">
               <h2 className="font-headline text-4xl text-primary mb-8">The Engineering Edge</h2>
               <p className="font-body text-lg text-on-surface-variant mb-8 leading-relaxed">
                 Our platform doesn't just record sessions; it parses technical nuance. Whether it's the time complexity of a student's solution or the confidence in their system design explanation, Aarovan provides the depth required for elite-tier placements.
@@ -133,7 +144,7 @@ const Features = () => {
                 </div>
               </div>
             </div>
-            <div className="relative">
+            <div ref={edgeVisualRef} className="relative opacity-0" style={{ animationDelay: '0.2s' }}>
               <div className="glass-panel p-8 rounded-xl relative z-10 border border-white/20">
                 <div className="mb-4 flex items-center justify-between">
                   <span className="font-label text-xs uppercase tracking-widest text-primary">Active AI Analysis</span>
