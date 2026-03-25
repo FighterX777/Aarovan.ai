@@ -1,3 +1,5 @@
+import logo from '../assets/logo.png';
+
 const Footer = () => {
   return (
     <footer className="bg-[#efeeed] dark:bg-slate-900 full-width py-12 px-8">
@@ -8,7 +10,7 @@ const Footer = () => {
               alt="Aarovan.ai Logo" 
               className="h-6 w-auto" 
               data-alt="Aarovan.ai small version logo" 
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzSCdZ517uxs5nK5V2SAIM69CQj7wubscDFy7AuV2YtGV0mccuLe92qHcb6RVrRiMl8UgReW25fgSqehEtuujF9yVDwg0NuiKf2KRAFFgEZVbTr3De6TYBhwxMagJBqszokvXE7v2TnEwN6XBngNSBjbxkm15HYf46notnY8ejaBlyGW3N6aDWQpgsWqhvRpUO6Wv1iZ3xvupfWI_pjFwIdyAq-v7az_Y9iCJKtYTIGhZRhRyfe2ZwriABma8SKoqoLzTb_-dws3c"
+              src={logo}
             />
             <span className="text-xl font-serif font-bold text-[#1D3E53] dark:text-slate-100">Aarovan.ai</span>
           </div>
